@@ -3,11 +3,6 @@
 
 <head>
     <!--needs to be changed with a js script-->
-    <script>
-        function postnrToCity() {
-            document.getElementById("city").innerHTML = "Hello World";
-        }
-    </script>
     <!-- Meta tags -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -61,7 +56,7 @@
         <!-- Content wrapper start -->
         <div class="content-wrapper">
             <input id="post-nr" type="number" placeholder="enter your Post code">
-            <button onclick="postnrToCity()">Search</button>
+            <button onclick="postCodeToCity()">Search</button>
 
             <div id="city">City</div>
 
@@ -79,6 +74,7 @@
     <!-- Page wrapper end -->
     <!-- Halfmoon JS -->
     <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
+    <script src=postCodeToCity.js></script>
 </body>
 
 </html>
