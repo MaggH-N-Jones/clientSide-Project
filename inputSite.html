@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!--needs to be changed with a js script-->
     <script>
-        function myFunction() {
-          document.getElementById("demo").innerHTML = "Hello World";
+        function postnrToCity() {
+            document.getElementById("city").innerHTML = "Hello World";
         }
     </script>
     <!-- Meta tags -->
@@ -14,7 +16,7 @@
 
     <!-- Favicon and title -->
     <link rel="icon" href="path/to/fav.png">
-    <title>Starter template - Halfmoon</title>
+    <title>Post nr to city</title>
 
     <!-- Halfmoon CSS -->
     <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
@@ -25,6 +27,7 @@
       Learn more: https://www.gethalfmoon.com/docs/customize/#notes-on-browser-compatibility
     -->
 </head>
+
 <body class="with-custom-webkit-scrollbars with-custom-css-scrollbars" data-set-preferred-mode-onload="true">
     <!-- Modals go here -->
     <!-- Reference: https://www.gethalfmoon.com/docs/modal -->
@@ -50,15 +53,15 @@
                     </span>
                     Find city
                 </a>
-                
+
             </div>
             <!-- Reference: https://www.gethalfmoon.com/docs/sidebar -->
         </div>
         <!-- Sidebar end -->
         <!-- Content wrapper start -->
         <div class="content-wrapper">
-            <input  id="post-nr" type="number" placeholder="enter your Post code">
-            <button onclick="">Search</button>
+            <input id="post-nr" type="number" placeholder="enter your Post code">
+            <button onclick="postnrToCity()">Search</button>
 
             <div id="city">City</div>
 
@@ -77,4 +80,5 @@
     <!-- Halfmoon JS -->
     <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
 </body>
+
 </html>
